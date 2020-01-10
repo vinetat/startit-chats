@@ -6,8 +6,8 @@ app = Flask('app')
 
 
 @app.route('/')
-def index_page():
-    return render_template("index.html")
+def index_lapa():
+  return render_template('chats.html')
 
 @app.route('/health')
 def health_check():
