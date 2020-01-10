@@ -1,0 +1,363 @@
+{
+	"info": {
+		"_postman_id": "7cd25b9e-97c9-47ea-a43d-565745dc248f",
+		"name": "StartIT Chats",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "0.5-oop-modelis",
+			"item": [
+				{
+					"name": "0.5 /chats/suuti pārbaude 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3cb1a86c-ec08-4daf-b059-e6c505e76766",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Content-Type is present\", function () {",
+									"    pm.response.to.have.header(\"Content-Type\");",
+									"});",
+									"pm.test(\"Content type is json\", function () {",
+									"    pm.expect(pm.response.headers.get('Content-Type')).to.include(\"application/json\");",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"chats\": {\"vaards\" :\"Postman\", \"zinja\": \"vēl viens sveiciens\"}}"
+						},
+						"url": {
+							"raw": "{{target}}/chats/suuti",
+							"host": [
+								"{{target}}"
+							],
+							"path": [
+								"chats",
+								"suuti"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "0.5 /chats/lasi pārbaude",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3cb1a86c-ec08-4daf-b059-e6c505e76766",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Content-Type is present\", function () {",
+									"    pm.response.to.have.header(\"Content-Type\");",
+									"});",
+									"pm.test(\"Content type is json\", function () {",
+									"    pm.expect(pm.response.headers.get('Content-Type')).to.include(\"application/json\");",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{target}}/chats/lasi",
+							"host": [
+								"{{target}}"
+							],
+							"path": [
+								"chats",
+								"lasi"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "0.2-servera-puse",
+			"item": [
+				{
+					"name": "0.2 /chats/lasi pārbaude",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3cb1a86c-ec08-4daf-b059-e6c505e76766",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Content-Type is present\", function () {",
+									"    pm.response.to.have.header(\"Content-Type\");",
+									"});",
+									"pm.test(\"Content type is json\", function () {",
+									"    pm.expect(pm.response.headers.get('Content-Type')).to.include(\"application/json\");",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{target}}/chats/lasi",
+							"host": [
+								"{{target}}"
+							],
+							"path": [
+								"chats",
+								"lasi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "0.2 /chats/suuti pārbaude",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3cb1a86c-ec08-4daf-b059-e6c505e76766",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Content-Type is present\", function () {",
+									"    pm.response.to.have.header(\"Content-Type\");",
+									"});",
+									"pm.test(\"Content type is json\", function () {",
+									"    pm.expect(pm.response.headers.get('Content-Type')).to.include(\"application/json\");",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"chats\": {\"vaards\" :\"es\", \"zinja\": \"sveiciens no postman\"}}"
+						},
+						"url": {
+							"raw": "{{target}}/chats/suuti",
+							"host": [
+								"{{target}}"
+							],
+							"path": [
+								"chats",
+								"suuti"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "0.1-sakums",
+			"item": [
+				{
+					"name": "Servera veselības pārbaude",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3cb1a86c-ec08-4daf-b059-e6c505e76766",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Body is correct\", function () {",
+									"    pm.response.to.have.body(\"OK\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{target}}/health",
+							"host": [
+								"{{target}}"
+							],
+							"path": [
+								"health"
+							]
+						},
+						"description": "Pārbauda route /health"
+					},
+					"response": []
+				},
+				{
+					"name": "Indeksa lapas veselības tests",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3cb1a86c-ec08-4daf-b059-e6c505e76766",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Content-Type is present\", function () {",
+									"    pm.response.to.have.header(\"Content-Type\");",
+									"});",
+									"pm.test(\"Content type is html\", function () {",
+									"    pm.expect(pm.response.headers.get('Content-Type')).to.include(\"text/html\");",
+									"});",
+									"pm.test(\"Body matches string\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"<!DOCTYPE html>\");",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{target}}/",
+							"host": [
+								"{{target}}"
+							],
+							"path": [
+								""
+							]
+						},
+						"description": "Pārbauda atbildi no routes /\n\nJābūt response code 200 un jāsatur HTML"
+					},
+					"response": []
+				},
+				{
+					"name": "chats.js veselības tests",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3cb1a86c-ec08-4daf-b059-e6c505e76766",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Content-Type is present\", function () {",
+									"    pm.response.to.have.header(\"Content-Type\");",
+									"});",
+									"pm.test(\"Content type is javascript\", function () {",
+									"    pm.expect(pm.response.headers.get('Content-Type')).to.include(\"application/javascript\");",
+									"});",
+									"pm.test(\"There is some content\", function () {",
+									"    pm.response.to.be.withBody;",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{target}}/static/chats.js",
+							"host": [
+								"{{target}}"
+							],
+							"path": [
+								"static",
+								"chats.js"
+							]
+						},
+						"description": "Pārbauda vai ir pieejams javascript fails"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "17ae271a-ea1c-4ee5-9ede-533f7267995d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "4a86cbf0-7a97-44a0-8035-f99e213efa4d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "ecd3f3b2-cee6-4b50-ac1b-be4e9250f0d6",
+			"key": "target",
+			"value": "http://127.0.0.1:5000",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}

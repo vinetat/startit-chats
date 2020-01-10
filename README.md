@@ -11,8 +11,8 @@ Projekta mērķis ir pamazām izveidot webčata aplikāciju, kurā būtu realiz�
 1. Lai darbinātu un pārbauditu lokāli nepieciešama izstrādes vide ar Python 3 (un pip) un git atbalstu
 1. Lai darbinātu citiem pieejamā veidā nepieciešams Heroku projekts, kas savienots ar GitHub repozitoriju, skat. [KAA-HEROKU](KAA-HEROKU.md)
 1. Alternatīvi iepriekšējam punktam - pastāvīgi strādājošs serveris ar Interneta pieeju, publisku IP adresi un Python 3, piemēram:
-  - repl.it projekts (skat. komentārus beigās)
-  - personīgais/skolas serveris
+   - repl.it projekts (skat. komentārus beigās)
+   - personīgais/skolas serveris
 
 ## Mācību process
 
@@ -23,6 +23,8 @@ Katra posma sākuma stāvoklis ir zars (branch) GitHub repozitorijā ar pilnīb�
 Katrā posmā ir vairāki uzdevumi - jaunu failu un funkciju veidošana, funkciju pārveidošana un uzlabošana utml. Atsevišķu uzdevumu izpilde var izraisīt kļūdas vai nepilnības projekta darbībā, līdz ir pabeigti visi posma uzdevumi.
 
 Sīkāk par posmiem un uzdevumiem skatīties [UZDEVUMI](UZDEVUMI.md)
+
+Ir aplūkojama [prezentācija](https://gitpitch.com/startitfonds/startit-chats)
 
 ## Funkcionalitātes idejas
 
