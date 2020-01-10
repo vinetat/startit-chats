@@ -8,8 +8,9 @@
     <link href="{{url_for('static',filename='favicon.ico')}}" rel="icon" type="image/x-icon"/>
     <script src="/static/chats.js" type="text/javascript"></script>
 </head>
-<body>
-    Sveiki no template! Un vel sveiki! OK<br>
-    Atkal OK!
+<body onload="lasiChatu();" class="body">
+    {% block saturs %}
+    {% endblock %}
+    <script src="{{ url_for('static', filename='chats.js') }}"></script>
 </body>
 </html>
