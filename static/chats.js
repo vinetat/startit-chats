@@ -61,12 +61,12 @@ ievadesLauks.addEventListener("keyup", function(event) {
 });
 
 function raadiChataRindas(dati) {
-    const chatUL = document.getElementById("chat");
+    const chatUL = document.getElementById("chats");
     // novaacam ieprieksheejo saturu
     while (chatUL.firstChild) {
         chatUL.firstChild.remove();
     }
-    for (let rinda of dati["messages"]) {
+    for (let rinda of dati["chats"]) {
       chatLI = izveidoJaunuRindu(rinda);
       chatUL.appendChild(chatLI);
     }
