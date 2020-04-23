@@ -98,7 +98,7 @@ body {
   }
   
   .btn-success:hover {
-    background-color: blue;
+    background-color: rgb(42, 216, 51);
   }
   
   input[type=text] {
